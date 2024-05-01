@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 29-04-2024 a las 09:05:31
+-- Tiempo de generación: 01-05-2024 a las 04:42:35
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -125,20 +125,21 @@ CREATE TABLE `paciente` (
   `id_paciente` int(11) NOT NULL,
   `nombre` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `apellido` varchar(100) NOT NULL,
-  `dni` varchar(20) NOT NULL,
+  `dni` int(11) NOT NULL,
   `fecha_nacimiento` date NOT NULL,
   `sexo` char(1) NOT NULL,
   `direccion` varchar(255) NOT NULL,
   `telefono` varchar(20) NOT NULL,
-  `email` varchar(100) NOT NULL
+  `email` varchar(100) NOT NULL,
+  `antecedentes` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `paciente`
 --
 
-INSERT INTO `paciente` (`id_paciente`, `nombre`, `apellido`, `dni`, `fecha_nacimiento`, `sexo`, `direccion`, `telefono`, `email`) VALUES
-(1, 'Karima ', 'Galvan', '101425015', '2002-04-01', 'F', 'Avenida Villa Palma, Cra 21', '12345678', 'pacienteprueba@testing.com');
+INSERT INTO `paciente` (`id_paciente`, `nombre`, `apellido`, `dni`, `fecha_nacimiento`, `sexo`, `direccion`, `telefono`, `email`, `antecedentes`) VALUES
+(1, 'Karima ', 'Galvan', 101425015, '2002-04-01', 'F', 'Avenida Villa Palma, Cra 21', '12345678', 'pacienteprueba@testing.com', 'Ninguna');
 
 -- --------------------------------------------------------
 
