@@ -1,19 +1,11 @@
 # ProyectoGPI
 Código del proyecto de salud para Gerencia de proyectos informáticos
 
+Para inicializar el proyecto se requiere de:
 
-Usuarios para ingresar al sistema: 
-Especialista: especialistaprueba@testing.com
-Correo: Admin1234
+Tener Xampp o un gestor de base de datos Mysql
 
-Paciente: 
-Correo: pacienteprueba@testing.com
-Contraseña: Admin1234
-
-
-
-Librerías dependientes para la correcta funcionalidad del sistema
-
+Librerías de Python para la ejecución del sistema
 
 
 astroid==3.1.0
